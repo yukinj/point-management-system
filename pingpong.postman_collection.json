@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "pingpong",
+		"_postman_id": "3cc98a30-56b3-da63-3423-69787d27e9ea",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "update score",
+			"request": {
+				"url": "http://localhost:3002/points",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"name1\":\"player1\",\n\t\t\"name2\":\"player2\",\n\t\t\"score1\":false,\n\t\t\"score2\":true\n}"
+				},
+				"description": "with user ownership check to ensuer only\u0001 owner of this comment can delete this comment"
+			},
+			"response": []
+		},
+		{
+			"name": "register player",
+			"request": {
+				"url": "http://localhost:3002/player",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"name1\":\"oscar\",\n\t\t\"name2\":\"yuki\",\n\t\t\"serve1\":false,\n\t\t\"serve2\":true\n}"
+				},
+				"description": "with user ownership check to ensuer only\u0001 owner of this comment can delete this comment"
+			},
+			"response": []
+		},
+		{
+			"name": "update score copy",
+			"request": {
+				"url": "http://localhost:3002/board",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"name1\":\"player1\",\n\t\t\"name2\":\"player2\",\n\t\t\"score1\":false,\n\t\t\"score2\":true\n}"
+				},
+				"description": "with user ownership check to ensuer only\u0001 owner of this comment can delete this comment"
+			},
+			"response": []
+		}
+	]
+}
